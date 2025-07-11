@@ -20,6 +20,7 @@ It servers as a modern, single-page application (SPA) that provides users with a
 - JavaScript
 - CSS3
 - HTML5
+- Vite
 
 ## Getting Started
 
@@ -50,27 +51,43 @@ npm install
 4. Start the development server:
 
 ```bash
-npm start
+npm run dev
 ```
 
-The application will run at `http://localhost:3000`.
+The application will run at the provided localhost in your terminal.
+
+## Production Build
+
+1. Build the project:
+
+```bash
+npm run build
+```
+
+2. Preview the production build:
+
+```bash
+npm run preview
+```
+
+3. Deploy:
+The `dist/` folder is ready to be deployed to any static host.
 
 ## Project Structure
 
 ```
 backroads-app/
-├── public/
-│   └── index.html
+├── index.html
 ├── src/
 │   ├── components/
-│   │   ├── Navbar.js
-│   │   ├── Hero.js
-│   │   ├── About.js
-│   │   ├── Services.js
-│   │   ├── Tours.js
-│   │   └── Footer.js
-│   ├── App.js
-│   ├── index.js
+│   │   ├── Navbar.jsx
+│   │   ├── Hero.jsx
+│   │   ├── About.jsx
+│   │   ├── Services.jsx
+│   │   ├── Tours.jsx
+│   │   └── Footer.jsx
+│   ├── App.jsx
+│   ├── main.jsx
 │   └── index.css
 ├── package.json
 └── README.md
